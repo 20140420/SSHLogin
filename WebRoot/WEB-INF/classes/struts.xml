@@ -3,6 +3,9 @@
 <struts>
 
 	<package name="SSHLogin" extends="struts-default">
-		<action name="login" class="com.LoginAction">
+		<action name="login" class="hmpLoginAction">
 			<result name="SUCCESS">/Success.jsp</result>
-			<result name="FAILURE">/Failure.jsp</result></action></package></struts>    
+			<result name="FAILURE">/Failure.jsp</result>
+		</action>
+	</package>
+</struts>    
