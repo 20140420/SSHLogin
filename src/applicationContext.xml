@@ -7,4 +7,9 @@
 
 	<bean id="hmpLoginAction" class="com.LoginAction">
 	</bean>
-</beans>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation"
+			value="classpath:hibernate.cfg.xml">
+		</property>
+	</bean></beans>
