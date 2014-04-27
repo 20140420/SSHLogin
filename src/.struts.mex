@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="SSHLogin" location="15,79" size="203,109">
+    <action name="login" location="15,34" size="150,62">
+      <result name="SUCCESS">
+        <resourceEdge source="SUCCESS" routing="0" target="Success.jsp" />
+      </result>
+      <result name="FAILURE">
+        <resourceEdge source="FAILURE" routing="0" target="Failure.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="Success.jsp" path="/Success.jsp" location="321,55" size="148,67" />
+  <webResource name="Failure.jsp" path="/Failure.jsp" location="319,128" size="150,55" />
+</Struts2Diagram>
+
