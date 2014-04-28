@@ -21,7 +21,7 @@
 		<property name="myeclipse.connection.profile">
 			MyTestDriver
 		</property>
-		<mapping resource="./User.hbm.xml" />
+		<mapping resource="com/bean/User.hbm.xml" />
 
 	</session-factory>
 

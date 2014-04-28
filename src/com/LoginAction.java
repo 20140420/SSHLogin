@@ -10,7 +10,7 @@ public class LoginAction extends ActionSupport {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	protected ActionManager mgr;  //该对象深用 Spring依赖注入
+	protected ActionManager mgr;  //该对象采用 Spring依赖注入
 	
 	private String username;
 	private String password;
