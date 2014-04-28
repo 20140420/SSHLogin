@@ -2,7 +2,10 @@ package com.dao;
 
 import java.util.List;
 import com.bean.User;
-
+/**
+ * 用户接口
+ * @author JiangQuan
+ */
 public interface UserDAO {
 	/**
 	 * 根据id查找用户

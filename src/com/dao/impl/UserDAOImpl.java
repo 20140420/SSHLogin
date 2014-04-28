@@ -5,7 +5,10 @@ import com.bean.User;
 
 import java.util.List;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
-
+/**
+ * 用户接口实现类
+ * @author JiangQuan
+ */
 public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 	public void delete(Integer id){
 		//TOOD Auto-generated method stub
