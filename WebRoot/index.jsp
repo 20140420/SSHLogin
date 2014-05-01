@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<META HTTP-EQUIV="Refresh" CONTENT="1;URL=index.html">
+<META HTTP-EQUIV="Refresh" CONTENT="1;URL=index">
 </head>
 <body>
 <center>

@@ -3,11 +3,16 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
 	"http://struts.apache.org/dtds/struts-2.1.dtd" >
 <struts>
-	<!-- 前台登录 -->
+	<!-- 直接进入WEB-INF前台登录 -->
 	<package name="shop.front"  extends="shop-default">
 		<action name="index">
             <result>/WEB-INF/pages/index.jsp</result>
         </action>
+        <!-- 登入 -->
+		<action name="login" class="hmpLoginAction">
+			<result name="SUCCESS">/WEB-INF/pages/Success.jsp</result>
+			<result name="FAILURE">/WEB-INF/pages/Failure.jsp</result>
+		</action>
 	</package>
 
 </struts>
