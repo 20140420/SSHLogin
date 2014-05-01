@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
   <package name="SSHLogin" location="15,79" size="203,109">
-    <action name="login" location="15,34" size="150,62">
+    <action name="login" location="23,42" size="150,62">
       <result name="SUCCESS">
         <resourceEdge source="SUCCESS" routing="0" target="Success.jsp" />
       </result>
@@ -10,7 +10,9 @@
       </result>
     </action>
   </package>
-  <webResource name="Success.jsp" path="/Success.jsp" location="321,55" size="148,67" />
-  <webResource name="Failure.jsp" path="/Failure.jsp" location="319,128" size="150,55" />
+  <webResource name="Success.jsp" path="/WEB-INF/pages/Success.jsp" location="303,57" size="150,55" />
+  <webResource name="Failure.jsp" path="/WEB-INF/pages/Failure.jsp" location="302,128" size="150,55" />
+  <include file="struts-front.xml" location="48,241" size="150,30" />
+  <include file="struts-default.xml" location="50,200" size="150,30" />
 </Struts2Diagram>
 

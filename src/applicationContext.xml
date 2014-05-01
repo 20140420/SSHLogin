@@ -3,8 +3,17 @@
 	xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+	<!-- 用hibernate单独文件链接数据库\配置sessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation"
+			value="classpath:hibernate.cfg.xml">
+		</property>
+	</bean>
+	
 	<!-- 用户添加的bean -->
 	<bean id="hmpLoginAction" class="com.LoginAction">
 		<property name="mgr" ref="mgr"></property>
@@ -20,13 +29,6 @@
 		</property>	
 	</bean>
 
-	<!-- 用hibernate单独文件链接数据库 -->
-	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
-		<property name="configLocation"
-			value="classpath:hibernate.cfg.xml">
-		</property>
-	</bean>
-	
+
 
 </beans>
