@@ -2,18 +2,10 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 
-	
 	<package name="SSHLogin" extends="struts-default">
 		<action name="login" class="hmpLoginAction">
-			<result name="SUCCESS">/WEB-INF/pages/Success.jsp</result>
-			<result name="FAILURE">/WEB-INF/pages/Failure.jsp</result>
+			<result name="SUCCESS">/Success.jsp</result>
+			<result name="FAILURE">/Failure.jsp</result>
 		</action>
 	</package>
-
-	<!-- 默认前后台公共视图的映射 
-	<include file="com/lyq/action/struts-default.xml" /> -->
-	<!-- 前台台管理的Struts2配置文件
-	<include file="com/lyq/action/struts-front.xml"></include> -->
-	
-	
 </struts>    
