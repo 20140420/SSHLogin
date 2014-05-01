@@ -4,8 +4,8 @@
 
 	<package name="SSHLogin" extends="struts-default">
 		<action name="login" class="hmpLoginAction">
-			<result name="SUCCESS">/Success.jsp</result>
-			<result name="FAILURE">/Failure.jsp</result>
+			<result name="SUCCESS">/WEB-INF/pages/Success.jsp</result>
+			<result name="FAILURE">/WEB-INF/pages/Failure.jsp</result>
 		</action>
 	</package>
 </struts>    
