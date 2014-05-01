@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- OGNL可以使用静态方法 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"/>	
+	<package name="shop-default" abstract="true" extends="struts-default">
+		<global-results>
+
+            <!--管理员登录-->
+            <result name="userLogin">/WEB-INF/pages/admin/user/user_login.jsp</result>
+        </global-results>
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="com.lyq.util.AppException"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+</struts>
