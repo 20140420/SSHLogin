@@ -17,9 +17,9 @@ public class ActionManagerImpl implements ActionManager {
 		this.userDAO = userDAO;
 	}
 	
-	public Integer validLogin(String username, String password){
+	public Integer validLogin(String email, String password){
 		try{
-			User user = userDAO.findUserByNameAndPass(username, password);
+			User user = userDAO.findUserByEmailAndPass(email, password);
 			if (user != null)
 			{
 				return user.getId();

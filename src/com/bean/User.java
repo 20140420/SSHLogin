@@ -12,8 +12,12 @@ public class User  implements java.io.Serializable {
 
     // Fields    
 
-     private Integer id;
-     private String username;
+     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Integer id;
+     private String email;
      private String password;
 
 
@@ -24,13 +28,13 @@ public class User  implements java.io.Serializable {
     }
 
 	/** minimal constructor */
-    public User(String username) {
-        this.username = username;
+    public User(String email) {
+        this.email = email;
     }
     
     /** full constructor */
-    public User(String username, String password) {
-        this.username = username;
+    public User(String email, String password) {
+        this.email = email;
         this.password = password;
     }
 
@@ -45,12 +49,12 @@ public class User  implements java.io.Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return this.username;
+    public String getEmail() {
+        return this.email;
     }
     
-    public void setUsername(String username) {
-        this.username = username;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPassword() {

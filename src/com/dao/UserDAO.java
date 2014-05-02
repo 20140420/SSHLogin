@@ -39,10 +39,10 @@ public interface UserDAO {
 	List<User> findAll();
 	/**
 	 * 根据用户名、密码查找用户
-	 * @param username 查询所需的用户名
+	 * @param email 查询所需的用户名
 	 * @param password 查询所需的密码
 	 * @return 对应的用户
 	 */
-	User findUserByNameAndPass(String username,String password);
+	User findUserByEmailAndPass(String email,String password);
 
 }
