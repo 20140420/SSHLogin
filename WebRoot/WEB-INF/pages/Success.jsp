@@ -23,6 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    登录成功！WEB-INF里面 struts-front.xml 增加email
+    登录成功！WEB-INF里面 struts-front.xml
   </body>
 </html>
