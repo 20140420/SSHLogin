@@ -23,12 +23,12 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 		return getHibernateTemplate().find("from test");
 	}
 	
-	public User findUserByNameAndPass(String username,String password){
+	public User findUserByEmailAndPass(String email,String password){
 		System.out.println("验证用");
 		//delete(2)；
 		//String() args=(username,password);
 		System.out.println("成功删除");
-		List ul =getHibernateTemplate().find("from com.bean.User au where au.username = '"+username+"'and au.password = '"+password+"'");
+		List ul =getHibernateTemplate().find("from com.bean.User au where au.email = '"+email+"'and au.password = '"+password+"'");
 		
 		if(ul.size()==1)
 		{

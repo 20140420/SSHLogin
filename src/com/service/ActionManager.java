@@ -5,7 +5,7 @@ import com.dao.UserDAO;
  * @author JiangQuan
  */
 public interface ActionManager {
-	Integer validLogin(String username, String password);
+	Integer validLogin(String email, String password);
 	public UserDAO getUserDAO();
 	public void setUserDAO(UserDAO userDAO);
 
