@@ -15,7 +15,6 @@ public class User  implements java.io.Serializable {
      private Integer id;
      private String username;
      private String password;
-     private String email;
 
 
     // Constructors
@@ -30,10 +29,9 @@ public class User  implements java.io.Serializable {
     }
     
     /** full constructor */
-    public User(String username, String password, String email) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
-        this.email = email;
     }
 
    
@@ -61,14 +59,6 @@ public class User  implements java.io.Serializable {
     
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getEmail() {
-        return this.email;
-    }
-    
-    public void setEmail(String email) {
-        this.email = email;
     }
    
 

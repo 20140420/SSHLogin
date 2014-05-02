@@ -43,6 +43,6 @@ public interface UserDAO {
 	 * @param password 查询所需的密码
 	 * @return 对应的用户
 	 */
-	User findUserByEmailAndPass(String email,String password);
+	User findUserByNameAndPass(String username,String password);
 
 }
